@@ -1,0 +1,23 @@
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    font-size: 20px;
+    color: #1E293B;
+}
+
+header{grid-area: head ;}
+nav{grid-area: nav;}
+.text{grid-area: yazi;}
+footer{grid-area: foot;}
+
+.container {
+    background-color: #FFFFFF(15, 15, 15, 0);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 570px 75px;
+    grid-template-areas:
+    "head nav"
+    "yazi yazi"
+    "foot foot";
+
+}

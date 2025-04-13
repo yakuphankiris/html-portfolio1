@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="clayout.css">
+    <link rel="stylesheet" href="cstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600&family=Roboto:wght@400&display=swap">
+    <link rel="icon" type="image/png" href="../assets/nobackground.png">
+
+    <style>
+        /* body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        header {
+            background-color: #0F172A;
+            border-bottom-left-radius: 20px;
+        }
+
+        nav {
+            background-color: #0F172A;
+            border-bottom-right-radius: 20px;
+            text-align: end;
+        }
+
+        .text {
+            margin: 20px 20px 25px 40px;
+            display: flex;
+            justify-content: center;
+            gap: 120px;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+
+        footer {
+            background-color:#0F172A;
+            color: #FFFFFF;
+            font-size: 16px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        } */
+
+        /* ---------------------------------------------- */
+
+        /* nav a {
+            color: #E5E7EB;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 28px;
+            margin-right: 10px;
+            padding: 5px 40px;
+            font-size: 16px;
+            border: 2px #3B82F6 solid;
+            border-radius: 35px;
+            font-family: 'Roboto', sans-serif;
+            transition: all 0.3s ease;
+            transform: scale(1);
+        }
+
+        nav a:hover{
+            background-color: #3B82F6;
+            color:white;
+            transform: scale(1.08);
+        }
+
+        .contact-box {
+            background-color: #E5E7EB;
+            border-radius: 12px;
+            box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.36);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-box:hover {
+            transform: translateY(-5px);
+        }
+
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            color: #E5E7EB;
+            font-size: 24px;
+            margin-top: 32px;
+            margin-left: 100px;
+        }
+
+        .text h2 {
+            color: #3B82F6;
+        }
+
+        footer p {
+            margin: 26px 10px;
+            text-align: center;
+            
+        } */
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <h1>Yakuphan Kiriş</h1>
+        </header>
+
+        <nav>
+            <button class="nav-button" onclick="switchCSS()" style="margin: 20px;">🌙</button>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="#">Contact</a>
+            
+        </nav>
+
+        <div class="text">
+            <div class="contact-box">
+                <img src="/assets/gmail.webp" alt="" width="190px">
+                <h3>E-Mail</h3>
+                <E-mail>yakuphankiris@gmail.com</E-mail>
+              </div>
+              <div class="contact-box">
+                <a href="https://www.linkedin.com/in/yakuphan-kiriş-302a65282" target="_blank"><img src="/assets/LinkedIn_logo_initials.png" alt="LinkedIn Profile" width="190px"></a>                  
+                <h3>Linkedln</h3></a>
+                <p>Yakuphan Kiriş</p>
+              </div>
+              <div class="contact-box">
+                <a href="https://github.com/yakuphankiris" target="_blank"><img src="/assets/github.png" alt="GitHub Profile" width="190px"></a>
+                <h3>GitHub</h3>
+                <p>yakuphankiris</p>
+              </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Yakuphan Kiriş - All rights reserved.</p>
+        </footer>
+
+    </section>
+
+    <script>
+        function switchCSS() {
+        const link = document.querySelector('link[rel="stylesheet"][href*="style"]');
+        const button = document.querySelector('.nav-button');
+
+        if (link) {
+            const current = link.getAttribute("href");
+
+            if (current === "cstyle.css") {
+                link.setAttribute("href", "cstyle2.css");
+                button.textContent = "☀️";
+            } else {
+                link.setAttribute("href", "cstyle.css");
+                button.textContent = "🌙";
+            }
+        }
+    }
+    </script>
+</body>
+</html>
